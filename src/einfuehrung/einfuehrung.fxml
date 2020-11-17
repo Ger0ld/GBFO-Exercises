@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Pane xmlns="http://javafx.com/javafx/8.0.271" xmlns:fx="http://javafx.com/fxml/1" fx:controller="einfuehrung.Controller">
+    <AnchorPane>
+        <HBox prefHeight="80.0" prefWidth="323.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox spacing="15.0">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </HBox.margin>
+                <Label text="Vorname:">
+                    <VBox.margin>
+                        <Insets top="5.0"/>
+                    </VBox.margin>
+                </Label>
+                <Label text="Nachname:">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Label>
+            </VBox>
+            <VBox spacing="10.0">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </HBox.margin>
+                <TextField fx:id="vornameTF"/>
+                <TextField fx:id="nachnameTF"/>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="70.0" layoutY="10.0" spacing="10.0">
+                <HBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                </HBox.margin>
+                <Button mnemonicParsing="false" onAction="#submit" text="Submit"/>
+                <Button mnemonicParsing="false" onAction="#clear" text="Clear"/>
+            </VBox>
+        </HBox>
+    </AnchorPane>
+</Pane>
